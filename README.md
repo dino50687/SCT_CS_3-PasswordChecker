@@ -357,9 +357,6 @@ Contributions are welcome! Areas for improvement:
 - **Performance Optimization**: Faster analysis for bulk operations
 - **GUI Interface**: Desktop or web-based interface
 
-## License 📄
-
-This project is open source and available under the MIT License.
 
 ## Changelog 📅
 
