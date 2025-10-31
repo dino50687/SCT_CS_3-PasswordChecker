@@ -251,7 +251,7 @@ class TestLayer3ActiveDefense(unittest.TestCase):
             node1['node_id'],
             {'type': 'phishing', 'severity': 'high'}
         )
-        self.assertTrue(result['broadcast'] == 'successful')
+        self.assertEqual(result['broadcast'], 'successful')
         self.assertGreaterEqual(result['nodes_alerted'], 1)
     
     def test_forensic_session(self):

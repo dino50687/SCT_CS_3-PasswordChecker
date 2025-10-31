@@ -147,11 +147,13 @@ class DecoyGenerator:
     
     def _generate_fake_card(self) -> str:
         """Generate fake credit card number."""
-        return f"4532-{''.join(str(secrets.randbelow(10)) for _ in range(12))}"
+        # Use clearly fake prefix 0000 to avoid any possibility of real card numbers
+        return f"0000-{''.join(str(secrets.randbelow(10)) for _ in range(12))}"
     
     def _generate_fake_ssn(self) -> str:
-        """Generate fake SSN."""
-        return f"{secrets.randbelow(900)+100}-{secrets.randbelow(90)+10}-{secrets.randbelow(9000)+1000}"
+        """Generate fake SSN using invalid range to avoid real SSNs."""
+        # Use 000 prefix which is never issued by SSA
+        return f"000-{secrets.randbelow(90)+10}-{secrets.randbelow(9000)+1000}"
     
     def _generate_fake_email(self) -> str:
         """Generate fake email."""

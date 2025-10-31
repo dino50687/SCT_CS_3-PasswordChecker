@@ -8,6 +8,16 @@ Layer 2: Account Security & Data Breach Protection
 Layer 3: Active Defense & Intelligence
 
 Combined with the existing Password Strength Analyzer
+
+⚠️ SECURITY NOTICE:
+This system is designed for educational and demonstration purposes.
+In production environments:
+- Never log passwords or sensitive data in clear text
+- Use secure password hashing (bcrypt, argon2, scrypt)
+- Implement proper secret management systems
+- Follow OWASP security best practices
+- Use secure communication channels (TLS/SSL)
+- Implement proper access controls and auditing
 """
 
 import sys
@@ -135,6 +145,9 @@ class CybersecuritySystem:
     def generate_secure_password(self, domain: str, length: int = 16) -> Dict:
         """
         Generate a secure, domain-specific password.
+        
+        ⚠️ WARNING: In production, never display passwords in clear text.
+        This is for demonstration purposes only.
         
         Args:
             domain: Domain for which to generate password

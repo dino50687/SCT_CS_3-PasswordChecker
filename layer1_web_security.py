@@ -578,9 +578,17 @@ class PrivacyBubbleMode:
 
 
 def demonstrate_layer1_features():
-    """Demonstrate Layer 1 features."""
+    """Demonstrate Layer 1 features.
+    
+    ⚠️ WARNING: This is for demonstration purposes only. In production:
+    - Never log passwords, secrets, or sensitive data in clear text
+    - Use secure logging practices with data masking
+    - Store credentials in secure vaults
+    """
     print("=" * 70)
     print("LAYER 1: WEB SECURITY & PHISHING DETECTION")
+    print("=" * 70)
+    print("⚠️  DEMO MODE: Displaying data for educational purposes only")
     print("=" * 70)
     
     # 1. Visual DNA Analyzer

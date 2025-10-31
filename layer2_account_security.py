@@ -456,9 +456,17 @@ class CyberAwarenessDashboard:
 
 
 def demonstrate_layer2_features():
-    """Demonstrate Layer 2 features."""
+    """Demonstrate Layer 2 features.
+    
+    ⚠️ WARNING: This is for demonstration purposes only. In production:
+    - Never log passwords or sensitive credentials in clear text
+    - Use secure password storage with hashing (bcrypt, argon2)
+    - Implement proper secret management systems
+    """
     print("=" * 70)
     print("LAYER 2: ACCOUNT SECURITY & DATA BREACH PROTECTION")
+    print("=" * 70)
+    print("⚠️  DEMO MODE: Displaying data for educational purposes only")
     print("=" * 70)
     
     # 1. Account Risk Meter
